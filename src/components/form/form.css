@@ -1,0 +1,221 @@
+.formContainer {
+  margin-top: 30px;
+}
+
+.queue {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nameContainer {
+  margin-top: 40px;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nameValue {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #a49f9f;
+  margin-top: 15px;
+
+  nameValue:valid {
+    outline-color: var(--clr-success);
+  }
+}
+
+/* input:valid {
+  outline-color: var(--clr-success);
+} */
+
+.uploadText {
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.secondContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 20px;
+}
+
+.secondNameContainer {
+  margin-top: 20px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+}
+
+.button3 {
+  font-size: 15px;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+  margin: 15px 0px;
+  text-align: center;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.button2 {
+  font-size: 15px;
+  border: none;
+  padding: 10px 100px;
+  border-radius: 4px;
+  color: white;
+  background-color: #2455d2;
+  margin: 40px 0px;
+  text-align: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  min-width: 20%;
+  height: 40px;
+}
+
+.uploadButton {
+  font-size: 15px;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+  margin: 30px 0px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameValue2 {
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #a49f9f;
+  margin-top: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -18px;
+}
+
+.error2 {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.options {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 25px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+.lottieContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+}
+
+.modalText {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.modalButton {
+  padding: 10px 20px;
+  background-color: #41b06e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalButton:hover {
+  background-color: #36a15b;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 790px) {
+  .secondContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+  .secondContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
